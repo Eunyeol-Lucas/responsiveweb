@@ -19,21 +19,60 @@
   position: relative;
   padding-top: 16px;
   font-size: 1.1em;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   width: 25%;
   text-align: left;
 }
 
+.select_language .t_lang i {
+  position: absolute;
+  left: 80px;
+  top: 16px; /*왜 필요하지?? */
+}
+
+.select_language .t_lang i.icon-angle-up {
+  opacity: 0;
+}
+
+.select_lang_list {
+  position: absolute;
+  top: 36px;
+  left: 0;
+  padding: 12px 0;
+  border: 1px solid #191919;
+  background: #fff;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+  /*가로에서 얼마나 떨어져있는지 / 세로에서 얼마나 / 얼마나 퍼져있는지 */
+  z-index: 3;
+  visibility: hidden;
+}
+
+.select_lang_list a {
+  display: block;
+  padding: 6px 21px 4px 18px;
+  text-transform: uppercase; /*글자 대소문자 등 변경 가능*/
+}
+
+.select_lang_list li:nth-child(1) a {
+  background: #eee;
+}
+
+.select_lang_list a:focus,
+.select_lang_list a:hover {
+  color: #000;
+  background: #eee;
+}
+
 h1.logo {
-    align-self: center;
+  align-self: center;
 }
 
 h1.logo img {
-    width: 166px;
+  width: 166px;
 }
 
 .header_link {
-    width: 25%;
-    padding-top: 16px;
-    text-align: right;
+  width: 25%;
+  padding-top: 16px;
+  text-align: right;
 }

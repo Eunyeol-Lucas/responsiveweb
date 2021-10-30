@@ -1,1 +1,39 @@
 @charset "utf-8";
+.header {
+  position: relative;
+  background: #fff;
+  z-index: 2;
+}
+.header_wrap {
+  height: 78px;
+  max-width: 1100px;
+  border: 1px solid #f00;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 7%;
+  position: relative;
+}
+
+.select_language {
+  position: relative;
+  padding-top: 16px;
+  font-size: 1.1em;
+  letter-spacing: .05em;
+  width: 25%;
+  text-align: left;
+}
+
+h1.logo {
+    align-self: center;
+}
+
+h1.logo img {
+    width: 166px;
+}
+
+.header_link {
+    width: 25%;
+    padding-top: 16px;
+    text-align: right;
+}

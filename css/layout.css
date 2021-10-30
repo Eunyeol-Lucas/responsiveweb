@@ -34,6 +34,18 @@
   opacity: 0;
 }
 
+.select_language.show .select_lang_list {
+  visibility: visible;
+}
+
+.select_language.show .t_lang i.icon-angle-up {
+  opacity: 1;
+}
+
+.select_language.show .t_lang i.icon-angle-down {
+  opacity: 0;
+}
+
 .select_lang_list {
   position: absolute;
   top: 36px;

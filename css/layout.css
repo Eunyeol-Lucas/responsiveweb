@@ -88,3 +88,74 @@ h1.logo img {
   padding-top: 16px;
   text-align: right;
 }
+
+.header_link > a {
+  /* > header_link의 바로 한 단계 아래 a tag */
+  display: inline-block;
+  margin: 0 0.2em;
+  padding: 1px 8px 0 10px;
+  font-size: 11px;
+  position: relative;
+}
+
+.header_link > a:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: -4px;
+  width: 1px;
+  height: 12px;
+  background: #eee;
+}
+
+.header_link > a.h_open_search:after {
+  display: none;
+}
+
+.search-container {
+  position: absolute;
+  right: 100px;
+  top: calc(50% - 20px);
+  /* margin-top: -20px; */
+  padding-bottom: 5px;
+  /* width: 308px; */
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: width 1s, opacity 0.1s;
+}
+
+.search-container.show {
+  width: 308px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.search_wrap {
+  border: 1px solid #ccc;
+}
+
+.search_wrap input[type="search"].text {
+  border: none;
+  height: 48px;
+  padding: 8px 12px;
+  font-size: 16px;
+  outline: none;
+  width: 100%;
+}
+
+.search_wrap .submit {
+  position: absolute;
+  top: -4px;
+  right: -17px;
+  font-size: 24px;
+  color: #aaa;
+  /* color: transparent; */
+}
+
+.sch_close {
+  position: absolute;
+  top: 0;
+  right: -60px;
+}

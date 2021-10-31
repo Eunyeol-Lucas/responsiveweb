@@ -7,7 +7,7 @@
 .header_wrap {
   height: 78px;
   max-width: 1100px;
-  border: 1px solid #f00;
+  /* border: 1px solid #f00; */
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -158,4 +158,61 @@ h1.logo img {
   position: absolute;
   top: 0;
   right: -60px;
+}
+
+.gnb {
+  background: #fff;
+  height: 30px;
+  border: 1px solid #000;
+}
+
+.gnb .header_wrap {
+  height: 100%;
+}
+
+.gnb_menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid transparent;
+
+}
+
+.nav_d1_a {
+  display: black;
+  padding: 5px 20px 10px;
+}
+
+.sub_menu {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  width: 100%;
+  border: 1px solid rgb(126, 124, 124);
+  height: 35px;
+  top: -100%;
+  /* top: 108px; */
+  opacity: 1;
+  transition: top 0.5s;
+}
+
+.sub_menu.On {
+  top: 108px;
+}
+
+.sub_menu li.nav_d2_box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.nav_d2_a {
+  font-size: 13px;
+  padding: 0 20px;
 }

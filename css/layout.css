@@ -223,3 +223,87 @@ h1.logo img {
 .sub_menu li.nav_d2_box.Over {
   opacity: 1;
 }
+
+/* visual */
+.visual {
+  max-width: 1920px;
+  margin: auto; /* 컨텐츠를 가운데로 가게 하는 다양한 방법이 있는데, flex를 쓰지 않고 margin auto를 쓸 경우, 텍스트들이 가운데에서 보임 */
+  position: relative;
+  z-index: 0;
+}
+
+.visual_wrap {
+  position: relative;
+  height: 550px;
+  background: #eee;
+}
+
+.visu_slide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center top; /*가로50% 세로top*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+}
+
+.visu_slide.On {
+  opacity: 1;
+}
+
+.visu_slide:nth-child(1) {
+  background-image: url(../img/visu_pc_01.jpg);
+}
+
+.visu_slide:nth-child(2) {
+  background-image: url(../img/visu_pc_02.jpg);
+}
+
+.visu_slide:nth-child(3) {
+  background-image: url(../img/visu_pc_03.jpg);
+}
+
+.visu_veil {
+  position: absolute;
+  right: 0;
+  top: 0;
+  /* width: 0; */
+  width: 44%;
+  height: 100%;
+}
+
+.visu_slide:nth-child(1) .visu_veil {
+    background-color: rgba(237, 185, 46, 0.30);
+}
+
+.visu_slide:nth-child(2) .visu_veil {
+    background-color: rgba(164, 105, 53, 0.50);
+}
+
+.visu_slide:nth-child(3) .visu_veil {
+    background-color: rgba(140, 171, 217, 0.50);
+}
+
+.visu_txt_wrap {
+  position: absolute;
+  right: 0;
+  top: 0;
+  /* width: 0; */
+  width: 44%;
+  height: 100%;
+}
+
+.visu_txt_cont{
+    width:414px;
+    height:100%;
+    display:flex;
+    color:#fff;
+    flex-flow:column;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+
+}

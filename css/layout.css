@@ -195,6 +195,7 @@ h1.logo img {
   /* top: 108px; */
   opacity: 1;
   transition: top 0.5s;
+  background: #fff;
 }
 
 .sub_menu.On {
@@ -276,15 +277,15 @@ h1.logo img {
 }
 
 .visu_slide:nth-child(1) .visu_veil {
-    background-color: rgba(237, 185, 46, 0.30);
+  background-color: rgba(237, 185, 46, 0.3);
 }
 
 .visu_slide:nth-child(2) .visu_veil {
-    background-color: rgba(164, 105, 53, 0.50);
+  background-color: rgba(164, 105, 53, 0.5);
 }
 
 .visu_slide:nth-child(3) .visu_veil {
-    background-color: rgba(140, 171, 217, 0.50);
+  background-color: rgba(140, 171, 217, 0.5);
 }
 
 .visu_txt_wrap {
@@ -296,14 +297,114 @@ h1.logo img {
   height: 100%;
 }
 
-.visu_txt_cont{
-    width:414px;
-    height:100%;
-    display:flex;
-    color:#fff;
-    flex-flow:column;
-    align-items: flex-end;
-    justify-content: center;
-    text-align: center;
+.visu_txt_cont {
+  width: 414px;
+  height: 100%;
+  display: flex;
+  color: #fff;
+  flex-flow: column;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+}
 
+.visu_tit {
+  font-size: 42px;
+  font-family: "Buri", serif;
+  line-height: 54px;
+}
+
+.visu_txt_sub01 {
+  font-size: 18px;
+  font-family: "Buri", serif;
+}
+
+.visu_txt_sub02 {
+  margin: 45px 0 0;
+  font-size: 20px;
+  font-family: "Buri", serif;
+  text-align: right;
+}
+
+.visu_btn_wrap {
+  margin: 30px 0 0;
+}
+
+.visu_btn_wrap .btn_view {
+  display: inline-block;
+  width: 132px;
+  height: 38px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 15px;
+  line-height: 35px;
+  text-align: center;
+}
+
+.visu_arrow {
+  position: absolute;
+  z-index: 2;
+  top: calc(50% - 29px);
+  height: 58px;
+  width: 30px;
+  text-indent: -999999px;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+.visu_arrow.right {
+  right: 20px;
+  background-image: url(../img/main-kv-arr-r.png);
+}
+
+.visu_arrow.left {
+  left: 20px;
+  background-image: url(../img/main-kv-arr-l.png);
+}
+
+.visu_btm_wrap {
+  position: absolute;
+  z-index: 2;
+  bottom: 24px;
+  width: 100%;
+  text-align: center;
+}
+
+.visu_btm_wrap li {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.visu_btm_wrap li.visu_btm_list a {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background: #fff;
+  text-indent: -999px;
+}
+
+.visu_btm_wrap li.visu_btm_list.Act a {
+  width: 25px;
+}
+
+.visu_btm_wrap li.controls_wrap .control {
+  width: 10px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  position: absolute;
+  text-indent: -9999px;
+  /* background: #f00; */
+  top: -3px;
+}
+
+.visu_btm_wrap li.controls_wrap .control.start {
+  background-image: url(../img/btn-play-pc.png);
+  display: none;
+}
+
+.visu_btm_wrap li.controls_wrap .control.stop {
+  background-image: url(../img/btn-stop-pc.png);
 }

@@ -163,7 +163,7 @@ h1.logo img {
 .gnb {
   background: #fff;
   height: 30px;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 }
 
 .gnb .header_wrap {
@@ -177,7 +177,6 @@ h1.logo img {
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid transparent;
-
 }
 
 .nav_d1_a {
@@ -190,7 +189,7 @@ h1.logo img {
   z-index: 1;
   left: 0;
   width: 100%;
-  border: 1px solid rgb(126, 124, 124);
+  /* border: 1px solid rgb(126, 124, 124); */
   height: 35px;
   top: -100%;
   /* top: 108px; */
@@ -215,4 +214,12 @@ h1.logo img {
 .nav_d2_a {
   font-size: 13px;
   padding: 0 20px;
+}
+
+.gnb.Active .gnb_menu {
+  border-bottom: 1px solid #d5d5d5;
+}
+
+.sub_menu li.nav_d2_box.Over {
+  opacity: 1;
 }

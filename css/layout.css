@@ -383,7 +383,8 @@ h1.logo img {
   height: 10px;
   border-radius: 5px;
   background: #fff;
-  text-indent: -999px;
+  text-indent: -9999px;
+  transition: all 0.3s;
 }
 
 .visu_btm_wrap li.visu_btm_list.Act a {

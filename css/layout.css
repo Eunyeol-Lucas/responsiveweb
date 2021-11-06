@@ -271,9 +271,10 @@ h1.logo img {
   position: absolute;
   right: 0;
   top: 0;
-  /* width: 0; */
-  width: 44%;
+  width: 0;
+  /* width: 44%; */
   height: 100%;
+  opacity: 0;
 }
 
 .visu_slide:nth-child(1) .visu_veil {
@@ -295,6 +296,7 @@ h1.logo img {
   /* width: 0; */
   width: 44%;
   height: 100%;
+  opacity: 0;
 }
 
 .visu_txt_cont {

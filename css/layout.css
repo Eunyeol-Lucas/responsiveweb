@@ -597,6 +597,7 @@ h2.cont_title {
 
 .flag_slider li.On {
   opacity: 1;
+  transition: all 1s;
 }
 
 .flag_slider li.fl_01 {

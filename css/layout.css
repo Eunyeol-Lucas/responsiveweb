@@ -341,6 +341,7 @@ h1.logo img {
   font-size: 15px;
   line-height: 35px;
   text-align: center;
+  padding: 0;
 }
 
 .visu_arrow {
@@ -641,7 +642,7 @@ h2.cont_title {
 }
 
 .flag_btm_wrap li {
-  display: inline-block; 
+  display: inline-block;
   /* inline-block은 고정된 공백이 존재하 flex와는 좀 다름 */
 }
 
@@ -669,11 +670,82 @@ h2.cont_title {
 }
 
 .flagside.left {
-  left:  0;
-  background-image: url('../img/flag-arr-prev.png');
+  left: 0;
+  background-image: url("../img/flag-arr-prev.png");
 }
 
 .flagside.right {
   right: 0;
-  background-image: url('../img/flag-arr-next.png');
+  background-image: url("../img/flag-arr-next.png");
+}
+
+.footer {
+  margin: 80px 0 60px;
+  border-top: 1px solid #eee;
+  font-size: 1.1em;
+  letter-spacing: 0.03em;
+}
+
+.footer_wrap {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 7%;
+}
+
+.footer_link {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.footer_item_wrap .footer_item {
+  display: inline-block;
+  margin-right: 1.5em;
+  padding: 3px 0;
+}
+
+.footer_item_wrap a.footer_item:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.footer_item_wrap .footer_item + .footer_item::before {
+  /* footer_item과 footer_item 사이에만 존재할 수 있음 */
+  content: "|";
+  color: #e5e5e5;
+  margin-right: 1.5em;
+}
+
+.link_right {
+  display: flex;
+  align-items: center;
+}
+
+.link_right .link_item {
+  display: inline-block;
+  margin-right: 0.5em;
+}
+
+.link_right .link_item img {
+  width: 37px;
+}
+
+.link_right .link_item i {
+  color: #000;
+  font-size: 14px;
+}
+
+.footer_mob {
+  display: none;
+}
+
+.footer_legal {
+  padding-top: 10px;
+}
+
+.legal_item {
+  padding: 0 8px;
+  color: #767676;
+  font-size: 11px;
 }

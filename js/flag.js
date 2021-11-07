@@ -4,8 +4,12 @@ $(function () {
   const fl_left_btn = $(".flagside.left");
   const fl_right_btn = $(".flagside.right");
 
+  let slider_play = setInterval(auto, 3000);
   first();
 
+  function auto() {
+    fl_right_btn.trigger("click");
+  }
   function first() {
     fl_slider.eq(0).addClass("On");
     fl_btm_list.eq(0).addClass("Act");
@@ -18,11 +22,10 @@ $(function () {
   function fl_btm_Event(e) {
     e.preventDefault();
 
-      const idx = $(this).index();
-      reset();
-      fl_slider.eq(idx).addClass("On");
-      fl_btm_list.eq(idx).addClass("Act");
-      
+    const idx = $(this).index();
+    reset();
+    fl_slider.eq(idx).addClass("On");
+    fl_btm_list.eq(idx).addClass("Act");
   }
   function left_Event(e) {
     e.preventDefault();

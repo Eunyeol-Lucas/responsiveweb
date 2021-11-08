@@ -13,6 +13,7 @@ $(function () {
 
   function auto() {
     visu_right.trigger("click"); // trigger: 어떤 행위를 반복적으로 하게 할 때 사용
+
   }
 
   function first() {
@@ -55,10 +56,9 @@ $(function () {
 
   function right(e) {
     e.preventDefault();
-    const idx = $(".visual_wrap>li.On").index();
+    e.stopPropagation(); //이벤트 부모노드로 전파 하지 않음
 
-    visu_slide.removeClass("On");
-    visu_btm_list.removeClass("Act");
+    const idx = $(".visual_wrap>li.On").index();
 
     reset();
 
@@ -70,6 +70,8 @@ $(function () {
     }
 
     slide_Event();
+    e.stopPropagation(); //이벤트 부모노드로 전파 하지 않음
+    e.preventDefault();
   }
 
   function left(e) {

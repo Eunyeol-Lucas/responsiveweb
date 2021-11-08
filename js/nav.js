@@ -17,6 +17,8 @@ $(function () {
   const mob_btn = $(".m_nav_list_tit");
   const m_sub_menu = $(".m_nav_list li>dl");
 
+  const main = $("#main");
+
   mob_nav_btn.click(function () {
     mob_nav.addClass("left_move");
     m_nav_bg.delay(500).fadeIn();
@@ -69,9 +71,17 @@ $(function () {
   });
   h_open_Btn.click(function () {
     search_container.addClass("show");
+    main.addClass("On");
   });
+  
   h_close.click(function (e) {
     e.preventDefault();
     search_container.removeClass("show");
   });
+
+  main.click(function () {
+    search_container.removeClass("show");
+    $(this).removeClass('On');
+
+  })
 });

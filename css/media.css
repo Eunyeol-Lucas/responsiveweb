@@ -295,4 +295,28 @@ width의 경우 나이가 많은 사람이 내라 ; */
     margin-left: 3px;
     border-left: 1px solid #4f4f4f;
   }
+
+  #main.On {
+    filter: blur(10px);
+  }
+
+  .search-container.show{
+    width: 100%;
+    transition: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background: #fff;
+  }
+
+  .search_wrap input[type="search"].text {
+    height: 40px;
+    padding: 0 12px;
+  }
+
+  .search_wrap .submit {
+    top: 3px;
+    right: -5px;
+  }
 }

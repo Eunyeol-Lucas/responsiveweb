@@ -1,7 +1,11 @@
 @charset "utf-8";
 
+#main {
+  filter: blur(0px);
+}
+
 .mob_nav {
-  display: none;
+    display:none;
 }
 
 .mob_nav_btn {

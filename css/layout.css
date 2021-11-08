@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+.mob_nav {
+  display: none;
+}
+
 .mob_nav_btn {
   display: none;
 }

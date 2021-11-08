@@ -13,10 +13,10 @@ width의 경우 나이가 많은 사람이 내라 ; */
   .recommend {
     margin-top: 8.3333vw;
   }
-  .recommend_tab {
+  .recomm_tab {
     margin-bottom: 1.736vw;
   }
-  .recommend_list_wrap {
+  .recomm_list_wrap {
     height: auto;
   }
 
@@ -38,7 +38,7 @@ width의 경우 나이가 많은 사람이 내라 ; */
     width: 100%;
   }
   .lounge_txt_wrap {
-    width: calc(100% - 49.8611px);
+    width: calc(100% - 49.8611vw);
   }
   .lounge_txt_wrap .sub_tit {
     margin: 2.7777vw 0 0;
@@ -63,14 +63,12 @@ width의 경우 나이가 많은 사람이 내라 ; */
   .flagship {
     margin: 8.3333vw 0 7.7778vw;
   }
-
   .flag_wrap {
-    height: 27.777vw;
+    height: 27.7777vw;
   }
-
-  .flag_txt_warp {
+  .flag_txt_wrap {
     left: 49vw;
-    width: 25.7777px;
+    width: 25.7777vw;
   }
   .flag_txt_wrap p {
     font-size: 1.25vw;
@@ -89,8 +87,8 @@ width의 경우 나이가 많은 사람이 내라 ; */
   }
   .flagside {
     width: 3.125vw;
-    height: 5.486vw;
-    top: cal(50%-2.7083vw);
+    height: 5.4861vw;
+    top: calc(50% - 2.7083vw);
     background-size: cover;
   }
 }
@@ -343,7 +341,7 @@ width의 경우 나이가 많은 사람이 내라 ; */
     width: 80%;
   }
 
-  .visu_btn_warp {
+  .visu_btn_wrap {
     margin: 2.083vw 0 0;
   }
 
@@ -383,5 +381,66 @@ width의 경우 나이가 많은 사람이 내라 ; */
     width: 0.694vw;
     height: 0.694vw;
     border-radius: 0.347vw;
+  }
+
+  .recomm_tab {
+    width: 52.9167vw;
+  }
+
+  .buy_view_layer .btn_view {
+    width: 9.167vw;
+    height: 2.639vw;
+    font-size: 1.042vw;
+    line-height: 2.639vw;
+    padding: 0;
+  }
+  .link_left {
+    display: none;
+  }
+  .link_right .link_item:nth-child(1) {
+    display: none;
+  }
+
+  .footer {
+    border-top: none;
+    margin: 0;
+  }
+  .footer_wrap {
+    padding: 0;
+  }
+
+  .footer_link {
+    justify-content: center;
+  }
+  .footer_legal {
+    display: none;
+  }
+  .footer_mob {
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .footer_mob > a{
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    position: relative;
+  }
+
+  .footer_mob > a.link_loc:before{
+    display: block;
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 12px;
+    background: #d5d5d5;
+    right: 0;
+    top: 30%;
+  }
+
+  .link_right .link_item i {
+    font-size: 1.8em;
+    line-height: 48px;
   }
 }

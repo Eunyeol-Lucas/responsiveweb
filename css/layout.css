@@ -5,7 +5,7 @@
 }
 
 .mob_nav {
-    display:none;
+  display: none;
 }
 
 .mob_nav_btn {
@@ -607,6 +607,7 @@ h2.cont_title {
   background-position: center top;
   text-indent: -9999px;
   opacity: 0;
+  background-size: cover;
 }
 
 .flag_slider li.On {
@@ -629,7 +630,6 @@ h2.cont_title {
 .flag_slider li.fl_04 {
   background-image: url(../img/flag-bg-pc-04.jpg);
 }
-
 .flag_txt_wrap {
   position: absolute;
   top: 0;
@@ -642,36 +642,30 @@ h2.cont_title {
   text-align: center;
   flex-flow: column;
 }
-
 .flag_txt_wrap p {
   color: #545454;
   font-size: 18px;
-  line-height: 38px;
+  line-height: 30px;
 }
 
 .flag_btm_wrap {
   margin-top: 30px;
   text-align: center;
 }
-
 .flag_btm_wrap li {
   display: inline-block;
-  /* inline-block은 고정된 공백이 존재하 flex와는 좀 다름 */
 }
-
 .flag_btm_wrap li a {
   display: block;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background: #e7e7e7;
-  text-indent: -99999px;
+  text-indent: -9999px;
 }
-
 .flag_btm_wrap li.Act a {
   background: #4f4f4f;
 }
-
 .flagside {
   position: absolute;
   width: 45px;
@@ -684,14 +678,12 @@ h2.cont_title {
 
 .flagside.left {
   left: 0;
-  background-image: url("../img/flag-arr-prev.png");
+  background-image: url(../img/flag-arr-prev.png);
 }
-
 .flagside.right {
   right: 0;
-  background-image: url("../img/flag-arr-next.png");
+  background-image: url(../img/flag-arr-next.png);
 }
-
 .footer {
   margin: 80px 0 60px;
   border-top: 1px solid #eee;

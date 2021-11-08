@@ -421,14 +421,14 @@ width의 경우 나이가 많은 사람이 내라 ; */
     padding: 15px 0;
   }
 
-  .footer_mob > a{
+  .footer_mob > a {
     display: inline-block;
     width: 150px;
     text-align: center;
     position: relative;
   }
 
-  .footer_mob > a.link_loc:before{
+  .footer_mob > a.link_loc:before {
     display: block;
     content: "";
     position: absolute;
@@ -442,5 +442,115 @@ width의 경우 나이가 많은 사람이 내라 ; */
   .link_right .link_item i {
     font-size: 1.8em;
     line-height: 48px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header_wrap {
+    height: 50px;
+  }
+
+  .mob_nav_btn {
+    top: 25px;
+  }
+
+  .header_link > a.h_open_search {
+    top: 5px;
+  }
+
+  h1.logo img {
+    width: 112px;
+  }
+
+  .visual_wrap {
+    height: 135vw;
+  }
+
+  .visu_slide:nth-child(1) {
+    background-image: url(../img/visu_mo_01.jpg);
+  }
+
+  .visu_slide:nth-child(2) {
+    background-image: url(../img/visu_mo_02.jpg);
+  }
+
+  .visu_slide:nth-child(3) {
+    background-image: url(../img/visu_mo_03.jpg);
+  }
+
+  .visu_veil {
+    /* display: none;을 사용하지 않음 mob에서 pc로 이동시 animate가 되지 않는 문제 */
+    visibility: hidden;
+    /* 본인의 자리는 갖고있음 */
+  }
+  .visu_slide:nth-child(1) .visu_txt_wrap {
+    background-color: rgba(237, 185, 46, 0.3);
+  }
+
+  .visu_slide:nth-child(2) .visu_txt_wrap {
+    background-color: rgba(164, 105, 53, 0.5);
+  }
+  .visu_slide:nth-child(3) .visu_txt_wrap {
+    background-color: rgba(140, 171, 217, 0.5);
+  }
+
+  .visu_txt_wrap {
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    height: 28.125vw;
+  }
+
+  .visu_txt_cont {
+    width: 100%;
+    align-items: center;
+  }
+
+  .visu_txt_sub02 {
+    display: none;
+  }
+
+  .visu_btn_wrap {
+    display: none;
+  }
+
+  .visu_tit {
+    font-size: 6.25vw;
+    line-height: 7.188vw;
+    letter-spacing: -0.1em;
+  }
+
+  .visu_txt_sub01 {
+    margin-top: 1.25vw;
+    font-size: 3.438vw;
+    letter-spacing: 0.01em;
+  }
+
+  .visu_btm_wrap {
+    bottom: -8.438vw;
+  }
+
+  .visu_btm_wrap li.visu_btm_list a {
+    width: 2.5vw;
+    height: 2.5vw;
+    background: #e7e7e7;
+    border-radius: 1.25vw;
+  }
+
+  .visu_btm_wrap li.controls_wrap .control.start {
+    background-image: url(../img/btn-play-mo.png);
+  }
+
+  .visu_btm_wrap li.controls_wrap .control.stop {
+    background-image: url(../img/btn-stop-mo.png);
+  }
+
+  .visu_arrow {
+    width: 20px;
+    height: 20px;
+    top: auto;
+    bottom: -8.438vw;
+    background-position: center top;
+    padding: 0;
   }
 }

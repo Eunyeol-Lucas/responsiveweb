@@ -35,7 +35,8 @@ $(function () {
   h_open_Btn.click(function () {
     search_container.addClass("show");
   });
-  h_close.click(function () {
+  h_close.click(function (e) {
+    e.preventDefault();
     search_container.removeClass("show");
   });
 });

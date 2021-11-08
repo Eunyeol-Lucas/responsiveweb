@@ -1,4 +1,9 @@
 @charset "utf-8";
+
+.mob_nav_btn {
+  display: none;
+}
+
 .header {
   position: relative;
   background: #fff;

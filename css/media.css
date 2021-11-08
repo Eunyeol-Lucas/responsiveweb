@@ -300,7 +300,7 @@ width의 경우 나이가 많은 사람이 내라 ; */
     filter: blur(10px);
   }
 
-  .search-container.show{
+  .search-container.show {
     width: 100%;
     transition: none;
     position: fixed;
@@ -318,5 +318,70 @@ width의 경우 나이가 많은 사람이 내라 ; */
   .search_wrap .submit {
     top: 3px;
     right: -5px;
+  }
+
+  .visual_wrap {
+    height: 38.134vw;
+  }
+
+  .visu_tit {
+    font-size: 2.917vw;
+    line-height: 3.75vw;
+    letter-spacing: -0.139vw;
+  }
+
+  .visu_txt_sub01 {
+    font-size: 1.25vw;
+  }
+
+  .visu_txt_sub02 {
+    margin: 3.194vw 0 0;
+    font-size: 1.389vw;
+  }
+
+  .visu_txt_cont {
+    width: 80%;
+  }
+
+  .visu_btn_warp {
+    margin: 2.083vw 0 0;
+  }
+
+  .visu_btn_wrap .btn_view {
+    width: 9.167vw;
+    height: 2.639vw;
+    font-size: 1.042vw;
+    line-height: 2.639vw;
+    margin-left: 0.694vw;
+  }
+
+  .visu_arrow {
+    width: 2.093vw;
+    height: 4.028vw;
+    margin-top: -2.014wv;
+    /* 여기까지만 작성할 경우 이미지가 짤림 */
+    background-size: contain;
+    /* contain으로 변경하면 그 영역 안에서 큰 값으로 맞추는게 아니라 작은 값으로 맞춤 */
+  }
+
+  .visu_arrow.left {
+    left: 1.3889vw;
+  }
+  .visu_arrow.right {
+    right: 1.3889vw;
+  }
+
+  .visu_btm_wrap {
+    bottom: 1.667vw;
+  }
+
+  .visu_btm_wrap li {
+    padding: 0 0.347vw;
+  }
+
+  .visu_btm_wrap li a {
+    width: 0.694vw;
+    height: 0.694vw;
+    border-radius: 0.347vw;
   }
 }

@@ -195,7 +195,7 @@ width의 경우 나이가 많은 사람이 내라 ; */
     height: 100%;
     background-color: rgba(0, 0, 0, 0.308);
     z-index: 0;
-    /* display: none; */
+    display: none;
   }
   .sidenav-h {
     text-align: center;
@@ -285,7 +285,6 @@ width의 경우 나이가 많은 사람이 내라 ; */
 
   .m_nav_cp p a {
     display: inline-block;
-    
     color: #767676;
     line-height: 1.1;
   }

@@ -10,6 +10,41 @@ $(function () {
   const sub_menu = $(".sub_menu"); //On
   const sub_menu_list = $(".sub_menu>ul>li"); //현재 순서값에 Over
 
+  //mob_nav1
+  const mob_nav_btn = $(".mob_nav_btn");
+  const mob_nav = $(".mob_nav");
+  const m_nav_bg = $(".m_nav_bg");
+  const mob_btn = $(".m_nav_list_tit");
+  const m_sub_menu = $(".m_nav_list li>dl");
+
+  mob_nav_btn.click(function () {
+    mob_nav.addClass("left_move");
+    m_nav_bg.delay(500).fadeIn();
+  });
+
+  m_nav_bg.click(function () {
+    $(this).fadeOut(0);
+    mob_nav.removeClass("left_move");
+  });
+
+  mob_btn.click(function () {
+    const str = $(this).attr("class");
+    const idx = $(".m_nav_list_tit.On");
+    // On이 붙어있으므로 기존에 눌러왔던 것임
+    console.log(str);
+
+    idx.next(m_sub_menu).slideToggle();
+    // submenu가 toggle이 되고
+    idx.toggleClass("On");
+    // 자기 자신도 On이 떨어짐
+
+    if (str == "m_nav_list_tit On") {
+    } else {
+      $(this).toggleClass("On");
+      $(this).next(m_sub_menu).slideToggle();
+    }
+  });
+
   gnb_menu_list.mouseenter(function () {
     const idx = $(this).index();
     console.log(idx);

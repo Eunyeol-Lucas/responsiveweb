@@ -665,4 +665,78 @@ width의 경우 나이가 많은 사람이 내라 ; */
   .lounge.lou02 {
     margin-top: 31vw;
   }
+
+  .flag_wrap {
+    height: auto;
+    padding: 0 8.72vw 10.3125vw;
+    background-image: url(../img/flag-bg-txt-mo.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 100%;
+  }
+
+  .flag_slider {
+    height: 82.5vw;
+  }
+
+  .flag_slider li.fl_01 {
+    background-image: url(../img/flag-bg-mo-01.jpg);
+  }
+
+  .flag_slider li.fl_02 {
+    background-image: url(../img/flag-bg-mo-02.jpg);
+  }
+
+  .flag_slider li.fl_03 {
+    background-image: url(../img/flag-bg-mo-03.jpg);
+  }
+
+  .flag_slider li.fl_04 {
+    background-image: url(../img/flag-bg-mo-04.jpg);
+  }
+
+  .flag_txt_wrap {
+    position: static;
+    left: auto;
+    width: 100%;
+  }
+
+  .flag_txt_wrap p {
+    margin: 6.25vw 0 0;
+    font-size: 3.75vw;
+    line-height: 6.5625vw;
+  }
+
+  .flag_txt_wrap .btn_view {
+    height: 9.0625vw;
+    padding: 0 9.375vw;
+    font-size: 3.125vw;
+    line-height: 9.0625vw;
+  }
+
+  .flag_btm_wrap {
+    margin-top: 0;
+    position: absolute;
+    top: 74.375vw;
+    width: 100%;
+    text-align: center;
+    left: 0;
+  }
+
+  .flagside {
+    width: 20px;
+    height: 20px;
+    top: 74.375vw;
+    margin-top: 0;
+    background-size: contain;
+    background-position: top;
+  }
+
+  .flagside.left {
+    left: 10vw;
+  }
+
+  .flagside.right {
+    right: 10vw;
+  }
 }

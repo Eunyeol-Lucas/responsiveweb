@@ -193,8 +193,14 @@ h1.logo img {
 }
 
 .nav_d1_a {
-  display: black;
+  display: block;
   padding: 5px 20px 10px;
+  font-size: 15px;
+}
+
+.nav_d1_a:hover {
+  color: #000;
+  font-weight: 500;
 }
 
 .sub_menu {
@@ -207,7 +213,7 @@ h1.logo img {
   top: -100%;
   /* top: 108px; */
   opacity: 1;
-  transition: top 0.5s;
+  transition: top 1s;
   background: #fff;
 }
 
@@ -230,12 +236,25 @@ h1.logo img {
   padding: 0 20px;
 }
 
+.nav_d2_a:hover {
+  color: #000 !important;
+  font-weight: bold;
+}
+
 .gnb.Active .gnb_menu {
   border-bottom: 1px solid #d5d5d5;
 }
 
 .sub_menu li.nav_d2_box.Over {
   opacity: 1;
+}
+
+.gnb.Active .gnb_menu {
+  border-bottom: 1px solid #d5d5d5;
+}
+.sub_menu li.nav_d2_box.Over {
+  opacity: 1;
+  z-index: 5;
 }
 
 /* visual */

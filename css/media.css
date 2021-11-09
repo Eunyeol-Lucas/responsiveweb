@@ -20,7 +20,7 @@ width의 경우 나이가 많은 사람이 내라 ; */
     height: auto;
   }
 
-  .recommend_img img {
+  .recomm_img img {
     width: auto;
     height: 20.139vw;
   }
@@ -552,5 +552,59 @@ width의 경우 나이가 많은 사람이 내라 ; */
     bottom: -8.438vw;
     background-position: center top;
     padding: 0;
+  }
+
+  .recommend {
+    margin-top: 21.875vw;
+  }
+
+  h2.cont_title {
+    font-size: 5vw;
+  }
+
+  .recomm_tab {
+    width: auto;
+    height: 8.625vw;
+    margin: 0 4.688vw;
+  }
+
+  .recomm_tab a.btn_tab {
+    font-size: 14px;
+    line-height: 8.625vw;
+  }
+
+  .recomm_list.Act {
+    flex-wrap: wrap;
+    /* flex는 무조건 한줄에 담는데, 공간이 부족하면 아래로 떨어지게 만들고싶어 */
+    margin-top: 4.688vw;
+  }
+
+  .recomm_list li {
+    width: 50%;
+    height: 68.43vw;
+    padding: 0 1.25vw;
+    cursor: pointer;
+  }
+
+  .recomm_list li:hover .buy_view_layer {
+    opacity: 0;
+    display: none;
+  }
+
+  .recomm_img {
+    display: flex;
+    height: 50vw;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eee;
+  }
+
+  .recomm_img img {
+    height: 30.139vw;
+  }
+
+  .recomm_name {
+    padding: 1.875vw 0;
+    font-size: 3.75vw;
   }
 }

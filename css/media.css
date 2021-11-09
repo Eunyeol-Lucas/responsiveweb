@@ -607,4 +607,62 @@ width의 경우 나이가 많은 사람이 내라 ; */
     padding: 1.875vw 0;
     font-size: 3.75vw;
   }
+
+  .cont02 {
+    margin-top: 6.125vw;
+    background: #fafafa;
+    padding: 22.9375vw 0;
+  }
+  .lounge {
+    height: auto;
+    position: relative;
+    padding: 0;
+  }
+  .lounge_cont {
+    flex-flow: wrap;
+  }
+
+  .lounge_img {
+    width: auto;
+    margin: 4.375vw 0;
+    padding: 0 8.75vw;
+  }
+
+  .lounge_txt_wrap {
+    width: 100%;
+    padding: 0 8.75vw;
+  }
+
+  .lounge_txt_wrap h3 {
+    position: absolute;
+    top: -50px;
+    width: 100%;
+    font-size: 4.375vw;
+  }
+
+  .lounge_txt_wrap .sub_tit {
+    font-size: 6.25vw;
+    line-height: 8.125vw;
+    margin: 6.25vw 0 0;
+  }
+  .lounge_txt_wrap .desc {
+    margin: 6.25vw 0 0;
+    font-size: 4.0625vw;
+    line-height: 6.5625vw;
+  }
+
+  .lounge_txt_wrap .btn_view {
+    height: 9.0625vw;
+    padding: 0 9.375vw;
+    font-size: 3.125vw;
+    line-height: 9.0625vw;
+  }
+
+  .lounge.lou02 .lounge_img {
+    order: 0;
+  }
+
+  .lounge.lou02 {
+    margin-top: 31vw;
+  }
 }
